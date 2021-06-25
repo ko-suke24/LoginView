@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		14C40B422683F9F300A05432 /* loginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C40B412683F9F300A05432 /* loginApp.swift */; };
-		14C40B442683F9F300A05432 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C40B432683F9F300A05432 /* ContentView.swift */; };
 		14C40B462683F9F700A05432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C40B452683F9F700A05432 /* Assets.xcassets */; };
 		14C40B492683F9F700A05432 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C40B482683F9F700A05432 /* Preview Assets.xcassets */; };
 		14C40B542683F9F800A05432 /* loginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C40B532683F9F800A05432 /* loginTests.swift */; };
 		14C40B5F2683F9F800A05432 /* loginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C40B5E2683F9F800A05432 /* loginUITests.swift */; };
+		14C40B72268681AC00A05432 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C40B70268681AC00A05432 /* WelcomeScreenView.swift */; };
+		14C40B73268681AC00A05432 /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C40B71268681AC00A05432 /* SignInScreenView.swift */; };
+		14C40B772686821700A05432 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C40B762686821700A05432 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,6 @@
 /* Begin PBXFileReference section */
 		14C40B3E2683F9F300A05432 /* login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C40B412683F9F300A05432 /* loginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginApp.swift; sourceTree = "<group>"; };
-		14C40B432683F9F300A05432 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14C40B452683F9F700A05432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14C40B482683F9F700A05432 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		14C40B4A2683F9F700A05432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +46,9 @@
 		14C40B5A2683F9F800A05432 /* loginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C40B5E2683F9F800A05432 /* loginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginUITests.swift; sourceTree = "<group>"; };
 		14C40B602683F9F800A05432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14C40B70268681AC00A05432 /* WelcomeScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
+		14C40B71268681AC00A05432 /* SignInScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInScreenView.swift; sourceTree = "<group>"; };
+		14C40B762686821700A05432 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../../../Welcome-and-Sign-In-Page-SwiftUI-main/login/ContentView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +99,9 @@
 		14C40B402683F9F300A05432 /* login */ = {
 			isa = PBXGroup;
 			children = (
+				14C40B6F268681AC00A05432 /* Screens */,
 				14C40B412683F9F300A05432 /* loginApp.swift */,
-				14C40B432683F9F300A05432 /* ContentView.swift */,
+				14C40B762686821700A05432 /* ContentView.swift */,
 				14C40B452683F9F700A05432 /* Assets.xcassets */,
 				14C40B4A2683F9F700A05432 /* Info.plist */,
 				14C40B472683F9F700A05432 /* Preview Content */,
@@ -128,6 +133,16 @@
 				14C40B602683F9F800A05432 /* Info.plist */,
 			);
 			path = loginUITests;
+			sourceTree = "<group>";
+		};
+		14C40B6F268681AC00A05432 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				14C40B70268681AC00A05432 /* WelcomeScreenView.swift */,
+				14C40B71268681AC00A05432 /* SignInScreenView.swift */,
+			);
+			name = Screens;
+			path = "../../../Welcome-and-Sign-In-Page-SwiftUI-main/login/Screens";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C40B442683F9F300A05432 /* ContentView.swift in Sources */,
+				14C40B73268681AC00A05432 /* SignInScreenView.swift in Sources */,
+				14C40B72268681AC00A05432 /* WelcomeScreenView.swift in Sources */,
+				14C40B772686821700A05432 /* ContentView.swift in Sources */,
 				14C40B422683F9F300A05432 /* loginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
